@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		get '/<%= @home.name %>', to: '<%= @home.name2 %>#new' <br>
+		get '/<%= @home.name %>', to: '<%= @home.name2 %>#index' <br>
+		post '/<%= @home.name %>', to: '<%= @home.name2 %>#create' <br>
+		get '/<%= @home.name %>/:id', to: '<%= @home.name2 %>#show' <br>
+		get '/<%= @home.name %>/:id/edit(.:format)', to: '<%= @home.name2 %>#edit' <br>
+		patch '/<%= @home.name %>/:id(.:format)', to: '<%= @home.name2 %>#update' <br>
+		put '/<%= @home.name %>/:id(.:format)', to: '<%= @home.name2 %>#update' <br>
+		delete '/<%= @home.name %>/:id(.:format)', to: '<%= @home.name2 %>#destroy' <br>
+	</body>
+</html>
